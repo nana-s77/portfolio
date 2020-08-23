@@ -1,14 +1,30 @@
 .profile {
+  padding-bottom: 100px;
   &__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    text-align: center;
   }
 
   &__contentTitle {
     @include headTitle;
   }
+
   &__batsu {
-    font-size: 5rem;
+    font-size: 7em;
     color: $gray;
+    line-height: 0.5;
+  }
+
+  &__contentText {
+    max-width: 380px;
+    margin-top: 40px;
+    font-size: 1.6em;
+    text-align: left;
+    color: $text-color;
   }
 }

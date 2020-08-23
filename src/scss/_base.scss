@@ -3,10 +3,6 @@ body {
   font-family: "Economica", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
     sans-serif;
   font-size: 62.5%;
-  padding-top: 130px;
-}
-
-section {
   padding-top: 70px;
 }
 
@@ -32,4 +28,9 @@ section {
 .contentInner {
   max-width: 1080px;
   margin: 0 auto;
+}
+
+.title {
+  @include headTitle;
+  padding-bottom: 40px;
 }
