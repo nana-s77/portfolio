@@ -15,7 +15,7 @@ const app = {
     //出力するファイル名
     filename: "main.js",
     // 出力先のパス絶対パスを指定
-    path: path.resolve(__dirname, "dist/js"),
+    path: path.resolve(__dirname, "dist/"),
   },
   module: {
     rules: [

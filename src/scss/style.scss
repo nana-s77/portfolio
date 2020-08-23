@@ -1,9 +1,6 @@
 @charset "UTF-8";
-
-$bg-color: yellow;
-
-html {
-  body {
-    background: rgba($bg-color, 1);
-  }
-}
+@import "./_reset";
+@import "./_mixin";
+@import "./_base";
+@import "./_mv";
+@import "./_profile";

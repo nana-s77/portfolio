@@ -1,0 +1,25 @@
+.mv {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 250px;
+  &__title {
+    text-align: center;
+    position: relative;
+
+    &::after {
+      @include afterElm;
+      position: absolute;
+      bottom: -20px;
+      left: 43%;
+      width: 150px;
+      height: 16px;
+      background-image: url("../images/dot_img.png");
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+  }
+}

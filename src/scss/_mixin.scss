@@ -1,0 +1,22 @@
+$main-color: #e7f5f5;
+$sub-color: #d0ce9f;
+$text-color: #22a4ce;
+$white: #fff;
+$gray: #cad8d8;
+
+@mixin afterElm {
+  content: "";
+  display: block;
+}
+
+@mixin beforeElm {
+  content: "";
+  display: block;
+}
+
+@mixin headTitle {
+  font: {
+    size: 38px;
+  }
+  color: $sub-color;
+}

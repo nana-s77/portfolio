@@ -3,7 +3,12 @@ html(lang="ja")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&display=swap")
     title corobi nana|portfolio site
   body
-    include sub/sub.pug
-    h2 aaaa
+    include ./section/_mv.pug
+    .bgWrap
+      .contentInner
+        include ./section/_profile.pug
+        include ./section/_skills.pug
+        include ./section/_strength.pug

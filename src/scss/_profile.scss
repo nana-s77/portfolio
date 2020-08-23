@@ -1,0 +1,14 @@
+.profile {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contentTitle {
+    @include headTitle;
+  }
+  &__batsu {
+    font-size: 5rem;
+    color: $gray;
+  }
+}
