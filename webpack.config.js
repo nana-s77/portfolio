@@ -59,7 +59,7 @@ const app = {
 };
 
 const pugfiles = globule.find("./src/pug/**/*.pug", {
-  ignore: ["./src/pug/**/_*/*.pug"],
+  ignore: ["./src/pug/section/_*.pug"],
 });
 
 pugfiles.forEach((pugfile) => {

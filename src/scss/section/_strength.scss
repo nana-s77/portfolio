@@ -1,0 +1,9 @@
+.strength {
+  padding-bottom: 100px;
+
+  &__text {
+    font-size: 1.6em;
+    color: $text-color;
+    margin-bottom: 40px;
+  }
+}
