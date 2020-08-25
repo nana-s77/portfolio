@@ -23,7 +23,12 @@
     margin-top: 100px;
   }
 
-  &__listItem {
-    box-shadow: 3px 3px 2px $main-color;
+  &__listItem:hover {
+    transition: all 200ms ease-in;
+    opacity: 0.7;
+  }
+
+  &__listImg {
+    box-shadow: 2px 4px 3px #0186b2;
   }
 }
