@@ -1,0 +1,14 @@
+.blog {
+  padding-bottom: 100px;
+
+  &__text {
+    font-size: 1.6em;
+    color: $text-color;
+  }
+
+  &__link {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: $sub-color;
+  }
+}
