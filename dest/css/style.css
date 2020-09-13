@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+section {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal; }
+
+/* base */
+body {
+  font-family: "Economica", "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 62.5%;
+  padding-top: 70px; }
+
+section {
+  padding-bottom: 80px; }
+  @media screen and (max-width: 767px) {
+    section {
+      padding: 0 10px 40px 10px; } }
+
+.bgWrap {
+  background-color: #e7f5f5;
+  position: relative; }
+  .bgWrap::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -217px;
+    left: 0;
+    width: 100%;
+    height: 217px;
+    background-image: url(../images/nami.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media screen and (max-width: 767px) {
+      .bgWrap::before {
+        top: -50px;
+        height: 50px;
+        background-image: url(../images/nami.png);
+        background-repeat: no-repeat;
+        background-size: 100%; } }
+
+.contentInner {
+  max-width: 1080px;
+  margin: 0 auto; }
+  @media screen and (max-width: 767px) {
+    .contentInner {
+      max-width: 100%; } }
+
+.title {
+  font-size: 38px;
+  color: #d0ce9f;
+  padding-bottom: 40px; }
+  @media screen and (max-width: 767px) {
+    .title {
+      padding-bottom: 20px; } }
+
+.mv {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 250px; }
+  @media screen and (max-width: 767px) {
+    .mv {
+      max-width: 100%;
+      padding-bottom: 100px; } }
+  .mv__title {
+    text-align: center;
+    position: relative; }
+    .mv__title::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -20px;
+      left: 43%;
+      width: 150px;
+      height: 16px;
+      background-image: url("../images/dot_img.png"); }
+      @media screen and (max-width: 767px) {
+        .mv__title::after {
+          left: 30%; } }
+  .mv__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; }
+    @media screen and (max-width: 767px) {
+      .mv__list {
+        flex-direction: column;
+        width: 250px;
+        height: 870px;
+        margin: 100px auto 0 auto; } }
+  .mv__listItem:hover {
+    transition: all 200ms ease-in;
+    opacity: 0.7; }
+  .mv__listImg {
+    box-shadow: 2px 4px 3px #0186b2; }
+    @media screen and (max-width: 767px) {
+      .mv__listImg {
+        width: 250px;
+        height: 272px; } }
+
+.profile__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (max-width: 767px) {
+    .profile__wrap {
+      flex-direction: column; } }
+
+@media screen and (max-width: 767px) {
+  .profile__img {
+    width: 300px;
+    height: 186px; } }
+
+.profile__content {
+  text-align: center; }
+  @media screen and (max-width: 767px) {
+    .profile__content {
+      margin-top: 50px; } }
+
+.profile__contentTitle {
+  font-size: 38px;
+  color: #d0ce9f; }
+
+.profile__batsu {
+  font-size: 7em;
+  color: #cad8d8;
+  line-height: 0.5; }
+
+.profile__contentText {
+  max-width: 380px;
+  margin-top: 40px;
+  font-size: 1.6em;
+  text-align: left;
+  color: #22a4ce; }
+  @media screen and (max-width: 767px) {
+    .profile__contentText {
+      padding: 0 10px; } }
+
+.strength {
+  padding-bottom: 100px; }
+  @media screen and (max-width: 767px) {
+    .strength {
+      padding-bottom: 40px; } }
+  .strength__text {
+    font-size: 1.6em;
+    color: #22a4ce;
+    margin-bottom: 40px; }
+
+.blog {
+  padding-bottom: 100px; }
+  @media screen and (max-width: 767px) {
+    .blog {
+      padding-bottom: 50px; } }
+  .blog__text {
+    font-size: 1.6em;
+    color: #22a4ce; }
+  .blog__link {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #d0ce9f; }
+
+.circle {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  padding: 60px 90px;
+  background-color: #fff;
+  border-radius: 120px;
+  box-shadow: 2px 3px 3px #cad8d8; }
+  @media screen and (max-width: 767px) {
+    .circle {
+      padding: 30px 30px; } }
+  .circle__listItem:not(first-child) {
+    margin-left: 10px; }
+  .circle__listImg {
+    width: 100%; }
+

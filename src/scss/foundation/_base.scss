@@ -6,6 +6,14 @@ body {
   padding-top: 70px;
 }
 
+section {
+  padding-bottom: 80px;
+
+  @include sp {
+    padding: 0 10px 40px 10px;
+  }
+}
+
 .bgWrap {
   background-color: $main-color;
   position: relative;
@@ -22,15 +30,33 @@ body {
       repeat: no-repeat;
       size: cover;
     }
+
+    @include sp {
+      top: -50px;
+      height: 50px;
+      background: {
+        image: url(../images/nami.png);
+        repeat: no-repeat;
+        size: 100%;
+      }
+    }
   }
 }
 
 .contentInner {
   max-width: 1080px;
   margin: 0 auto;
+
+  @include sp {
+    max-width: 100%;
+  }
 }
 
 .title {
   @include headTitle;
   padding-bottom: 40px;
+
+  @include sp {
+    padding-bottom: 20px;
+  }
 }

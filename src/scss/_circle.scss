@@ -6,4 +6,19 @@
   background-color: $white;
   border-radius: 120px;
   box-shadow: 2px 3px 3px $gray;
+
+  @include sp {
+    padding: 30px 30px;
+  }
+
+  &__listItem {
+    // max-width: 0px;
+    &:not(first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &__listImg {
+    width: 100%;
+  }
 }

@@ -20,3 +20,9 @@ $gray: #cad8d8;
   }
   color: $sub-color;
 }
+
+@mixin sp {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
